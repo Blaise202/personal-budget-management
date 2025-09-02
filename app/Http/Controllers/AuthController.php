@@ -40,6 +40,7 @@ class AuthController extends Controller
       $user = Auth::user();
       return redirect()->route('home');
     }
+    return redirect()->back();
   }
 
   public function logout()
