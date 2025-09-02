@@ -174,3 +174,98 @@ input {
 .transactions-container::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, #43e97b, #38f9d7);
 }
+
+.container {
+    background: #222;
+    /* dark gray card */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    outline: none;
+    background: #111;
+    color: #fff;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+/* red + green buttons */
+.btn-login {
+    background: #006400;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background: #008000;
+}
+
+.btn-signup {
+    background: #8b0000;
+    color: #fff;
+}
+
+.btn-signup:hover {
+    background: #b22222;
+}
+
+.toggle-link {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.toggle-link a {
+    color: #1e90ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.toggle-link a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+.float-start {
+    float: left !important;
+}
+.float-end {
+    float: right !important;
+}

@@ -3,6 +3,7 @@
 
 <head>
  <meta charset="UTF-8">
+ <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/ico" />
  <meta content="width=device-width, initial-scale=1.0" name="viewport">
  <title>Money Tracker</title>
 </head>
@@ -10,6 +11,7 @@
 
 <body>
  <div class="left">
+  <a href="{{ route('logout') }}">Logout</a>
   <h3>Amount remaining to - $3,500</h3>
   <div class="amount-big">$ {{ number_format(3500 - $deposits + $withdraws) }}</div>
 
