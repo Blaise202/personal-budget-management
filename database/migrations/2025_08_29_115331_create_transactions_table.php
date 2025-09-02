@@ -15,8 +15,8 @@ return new class extends Migration
       $table->uuid('id')->primary();
       $table->string('type');
       $table->decimal('amount');
-      $table->softDeletes();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
 

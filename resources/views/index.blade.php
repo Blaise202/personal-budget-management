@@ -49,7 +49,7 @@
       <div class="transaction-item deposit">
        <div class="transaction-info">
         <span>+ ${{ $transaction->amount }} (Deposit)</span>
-        <small>2025-08-24</small>
+        <small>{{ $transaction->created_at->format('Y-m-d') }}</small>
        </div>
        <div class="transaction-actions">
         <div class="transaction-actions">
@@ -62,7 +62,7 @@
       <div class="transaction-item withdraw">
        <div class="transaction-info">
         <span>- ${{ $transaction->amount }} (Withdraw)</span>
-        <small>2025-08-25</small>
+        <small>{{ $transaction->created_at->format('Y-m-d') }}</small>
        </div>
        <div class="transaction-actions">
         <div class="transaction-actions">
