@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ReturnMail;
 use App\Mail\SendEmail;
 use App\Models\Email;
 use Dotenv\Validator;
@@ -40,6 +41,7 @@ class EmailController extends Controller
 
     Mail::to('izerimanab74@gmail.com')->send(new SendEmail($email));
     Mail::to('blaise.izerimana@ashesi.edu.gh')->send(new SendEmail($email));
+    Mail::to($request->email)->send(new ReturnMail($email));
 
     return redirect()->back()->with('success', 'Email sent successfully!');
   }
