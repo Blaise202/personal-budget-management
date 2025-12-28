@@ -14,6 +14,7 @@ return new class extends Migration
     Schema::create('emails', function (Blueprint $table) {
       $table->uuid('id')->primary();
       $table->string('name');
+      $table->string('subject')->default('Email From Portfolio Website');
       $table->string('email');
       $table->text('message');
       $table->timestamps();
