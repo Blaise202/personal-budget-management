@@ -22,7 +22,7 @@ class SendEmail extends Mailable
 
   public function build()
   {
-    return $this->view('emails.mailer', compact('email'))
-      ->subject('Email');
+    return $this->view('mailer')
+      ->subject($this->email->subject);
   }
 }

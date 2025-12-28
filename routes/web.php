@@ -20,5 +20,6 @@ Route::middleware('auth')->group(function () {
   Route::delete('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
   Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
   Route::get('/Emails', [EmailController::class, 'emails'])->name('send.emails');
-  Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('send.email');
 });
+
+Route::get('/send-email', [EmailController::class, 'sendEmail'])->name('send.email');
