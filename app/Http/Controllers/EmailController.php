@@ -5,10 +5,9 @@ namespace App\Http\Controllers;
 use App\Mail\ReturnMail;
 use App\Mail\SendEmail;
 use App\Models\Email;
-use Dotenv\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator as FacadesValidator;
+use Illuminate\Support\Facades\Validator;
 
 class EmailController extends Controller
 {
@@ -20,7 +19,7 @@ class EmailController extends Controller
 
   public function sendEmail(Request $request)
   {
-    $vaildator = FacadesValidator::make($request->all(), [
+    $vaildator = Validator::make($request->all(), [
       'name' => 'required|string|max:255',
       'email' => 'required|email|max:255',
       'subject' => 'sometimes',
